@@ -51,11 +51,9 @@ def logout():
 def firstpage():
     return render_template('firstpage.html')
 
-# @app.route('/filter/',methods = ['POST', 'GET'])
-# def filter():
-#     if request.method == 'POST':
-#        result = request.form[]
-#     return render_template('filter.html')
+@app.route('/filter/')
+def filter():
+     return render_template('filter.html')
 
 @app.route('/rank/')
 def rank():
